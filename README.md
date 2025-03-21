@@ -9,4 +9,4 @@ Simple to-do list app built with Kotlin &amp; Jetpack Compose.
 ## Technologies Used  
 - Kotlin  
 - Jetpack Compose  
-- MVVM Architecture
+- Room Database
