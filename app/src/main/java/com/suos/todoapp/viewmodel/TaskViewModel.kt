@@ -1,10 +1,11 @@
-package com.suos.todoapp
+package com.suos.todoapp.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.suos.todoapp.data.dao.TaskDAO
+import com.suos.todoapp.data.model.Task
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
 class TaskViewModel(private val taskDAO: TaskDAO) : ViewModel() {

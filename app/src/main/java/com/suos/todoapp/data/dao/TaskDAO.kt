@@ -1,5 +1,6 @@
-package com.suos.todoapp
+package com.suos.todoapp.data.dao
 import androidx.room.*
+import com.suos.todoapp.data.model.Task
 
 @Dao
 interface TaskDAO {

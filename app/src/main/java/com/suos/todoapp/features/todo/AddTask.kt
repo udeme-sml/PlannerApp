@@ -1,24 +1,16 @@
-package com.suos.todoapp
+package com.suos.todoapp.features.todo
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.text.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.*
 import androidx.compose.ui.unit.*
 import androidx.compose.ui.graphics.*
 import androidx.navigation.NavController
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.*
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.foundation.shape.*
-import androidx.compose.ui.platform.InspectableModifier
-import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
-import androidx.navigation.compose.NavHost
-import androidx.navigation.compose.composable
 
 
 @Composable

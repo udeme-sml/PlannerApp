@@ -1,12 +1,10 @@
-package com.suos.todoapp
+package com.suos.todoapp.features.todo
 
-import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.*
 import androidx.compose.ui.unit.*
-import androidx.compose.ui.graphics.*
 import androidx.navigation.NavController
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
@@ -19,10 +17,11 @@ import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.navigation.NavHostController
-import androidx.compose.runtime.livedata.observeAsState
 import androidx.navigation.compose.rememberNavController
-import androidx.navigation.compose.NavHost
+import com.suos.todoapp.data.dao.TaskDAO
+import com.suos.todoapp.viewmodel.TaskViewModel
+import com.suos.todoapp.viewmodel.TaskViewModelFactory
+import com.suos.todoapp.data.model.Task
 
 @Composable
 fun HomeScreen(navController: NavController, taskDAO: TaskDAO) {
